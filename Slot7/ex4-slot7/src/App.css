@@ -1,0 +1,59 @@
+:root {
+  /* Màu nền tổng thể */
+  --background-color: #f8f9fa;
+
+  /* Màu tiêu đề */
+  --title-color: #333;
+
+  /* Màu chữ trong thẻ Card */
+  --text-color: #555;
+
+  /* Màu nền Card */
+  --card-bg: #ffffff;
+
+  /* Màu viền Card */
+  --card-border: #ddd;
+
+  /* Màu nút */
+  --btn-bg: #0d6efd;
+  --btn-text: #ffffff;
+}
+
+/* Toàn trang */
+body {
+  background-color: var(--background-color);
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3 {
+  color: var(--title-color);
+  font-weight: bold;
+}
+
+/* Card */
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-title {
+  color: var(--title-color);
+}
+
+.card-text {
+  color: var(--text-color);
+}
+
+/* Button */
+.btn-primary {
+  background-color: var(--btn-bg);
+  border-color: var(--btn-bg);
+  color: var(--btn-text);
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}

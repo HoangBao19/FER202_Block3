@@ -1,0 +1,109 @@
+:root {
+  --bg: #f5f6fa;
+  --card: #ffffff;
+  --border: #e6e8ec;
+  --muted: #6b7280;
+  --radius: 14px;
+  --shadow: 0 8px 20px rgba(0,0,0,0.04);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar-blur {
+  backdrop-filter: blur(8px) saturate(1.2);
+  background: rgba(255, 255, 255, 0.85) !important;
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-link.active {
+  color: #0d6efd !important;
+  font-weight: 600;
+}
+
+/* Carousel caption */
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: var(--radius);
+  padding: 0.75rem 1rem;
+}
+
+/* Filter bar */
+.filter-bar,
+.p-3.bg-white {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+/* Movie card */
+.movie-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.movie-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.06);
+}
+
+.movie-card img {
+  width: 100%;
+  height: 220px;      /* bạn chỉnh tùy ý */
+  object-fit: contain;
+  background: #86bdb1;   /* màu nền phía sau ảnh */
+}
+
+
+/* Badge style */
+.badge {
+  font-weight: 500;
+}
+
+/* Modal */
+.modal-content {
+  border-radius: var(--radius);
+}
+
+/* Toast */
+.toast-container {
+  z-index: 1080;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 8px;
+}
+
+/* Form controls */
+.form-control,
+.form-select {
+  border-radius: 8px;
+  border-color: var(--border);
+}
+
+/* Alert */
+.alert {
+  border-radius: var(--radius);
+}
+
+/* Utility */
+.text-muted {
+  color: var(--muted) !important;
+}

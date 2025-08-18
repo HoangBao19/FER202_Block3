@@ -1,0 +1,71 @@
+body {
+  background-color: #f2f6fc; /* nền nhẹ */
+  font-family: Arial, sans-serif;
+}
+
+.form-container {
+  background: white;
+  padding: 25px;
+  max-width: 400px;
+  margin: 50px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.form-button {
+  text-align: center; /* căn giữa nút */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4cafef; /* xanh nhạt */
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover:not(:disabled) {
+  background-color: #3793d6; /* xanh đậm hơn khi hover */
+}
+
+button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin: 5px 0 0 0;
+}
+
+.toast {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 6px;
+  text-align: center;
+}

@@ -1,0 +1,118 @@
+/* ===== Base ===== */
+html, body, #root {
+  height: 100%;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+body {
+  background: #f5f6f8;
+  color: #212529;
+}
+
+/* ===== Navbar & Quick search ===== */
+.navbar {
+  background: #ffffff;
+  border-bottom: 1px solid #e6e9ed;
+  padding: 0.75rem 1rem;
+}
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #e02e0f;
+}
+.navbar .form-control {
+  min-width: 240px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  box-shadow: none;
+}
+@media (max-width: 576px) {
+  .navbar .form-control {
+    min-width: 160px;
+  }
+}
+
+/* ===== Page hero (tiêu đề + mô tả ngắn) ===== */
+.container > h2:first-child {
+  margin-top: 28px;
+  font-weight: 600;
+  color: #0d2a4d;
+}
+.container > h2:first-child + p {
+  margin-bottom: 16px;
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+/* ===== Filter box ===== */
+.filters {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+/* ===== Cards ===== */
+.card {
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+
+.card .card-img-top {
+  width: 100%;
+  height: 220px;       /* cố định box */
+  object-fit: cover;   /* crop vừa khít box */
+  object-position: center; /* canh giữa ảnh */
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  display: block;
+  background: #f0f0f0; /* fallback khi không có ảnh */
+}
+
+
+.card .card-title {
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  color: #0d2a4d;
+}
+.card .card-text {
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+/* ===== Buttons ===== */
+.btn {
+  border-radius: 8px;
+  font-weight: 500;
+  padding: 0.4rem 0.9rem;
+}
+.btn-primary {
+  background-color: #0d2a4d;
+  border-color: #0d2a4d;
+}
+.btn-primary:hover {
+  background-color: #12376b;
+  border-color: #12376b;
+}
+
+/* ===== Modal ===== */
+.modal-content {
+  border-radius: 14px;
+  border: none;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+.modal-header {
+  border-bottom: 1px solid #e5e7eb;
+}
+.modal-body img {
+  width: 100%;
+  max-height: 340px;
+  object-fit: cover;
+  border-radius: 12px;
+}

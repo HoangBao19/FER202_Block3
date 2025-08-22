@@ -1,0 +1,51 @@
+export const products = [
+  {
+    id: 0,
+    name: "Uthappizza",
+    image: "/images/uthappizza.png",
+    price: 4.99,
+    description: "A unique combination of Indian Uthappam and Italian pizza.",
+  },
+  {
+    id: 1,
+    name: "Zucchipakoda",
+    image: "/images/zucchipakoda.png",
+    price: 1.99,
+    description: "Deep fried Zucchini with chickpea batter.",
+  },
+  {
+    id: 2,
+    name: "Vadonut",
+    image: "/images/vadonut.png",
+    price: 1.99,
+    description: "A combination of vada and donut.",
+  },
+  {
+    id: 3,
+    name: "ElaiCheese Cake",
+    image: "/images/elaicheesecake.png",
+    price: 2.99,
+    description: "New York Style Cheesecake with Indian cardamoms.",
+  },
+  {
+    id: 4,
+    name: "Spicy Curry",
+    image: "/images/slide1.jpg",
+    price: 5.49,
+    description: "Rich flavorful curry with fresh spices.",
+  },
+  {
+    id: 5,
+    name: "Fresh Salad",
+    image: "/images/slide2.jpg",
+    price: 3.25,
+    description: "Green salad with vinaigrette dressing.",
+  },
+  {
+    id: 6,
+    name: "Grilled Steak",
+    image: "/images/slide3.jpg",
+    price: 8.75,
+    description: "Tender juicy steak grilled to perfection.",
+  },
+];
